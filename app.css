@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #f60f20;
+    --primary-color: #0a0304;
     --secondary-color: #1b20ce;
 }
 
@@ -8,22 +8,6 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-
-
-
-.blurb h2 {
-   /* color: #EA1C2C; */
-   color: black;
-   font-weight: 100;
-   font-size: 2.5rem;
-}
-
-.blurb p {
-    /* color: #f498b8; */
-    font-weight: 100;
-    font-size: 1.125rem;
-    line-height: 2;
-}
 
 .content {
     margin-top: 100px;
@@ -42,7 +26,7 @@ body {
 
 #mainNavbar .nav-link:hover {
     /* color: #EA1C2C; */
-    color: white;
+    color: rgb(245, 240, 240);
     /* border-bottom: 2px solid black; doesn't work as expected */
 }
 
@@ -83,11 +67,60 @@ body {
     font-weight: 500;
 }
 
+/* HOMEPAGE */
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
+    margin-top: 60px;
+}
+
+section#home {
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.home-content{
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+}
+
+.home-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 110%;
+}
+
+
+
+
+
+/* BUTTON */
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
 /* GALLERY PAGE */
 
-#gallery .title{
+/* #gallery .title{
     margin-top: 80px;
-}
+
+} */
 
 .portfolio {
     display: flex;
@@ -136,9 +169,9 @@ body {
 
 /* CONTACT PAGE */
 
-#contact .title{
+/* #contact .title{
     margin-top: 80px;
-}
+} */
 
 .contact {
     position: relative;
@@ -231,9 +264,9 @@ body {
 }
 
 /* ABOUT */
-#services .title{
+/* #services .title{
     margin-top: 80px;
-}
+} */
 .services{
     margin-top:40px;
     display: grid;
@@ -292,7 +325,23 @@ body {
 }
 
 @media screen and (max-width: 768px){
-    
+    .home-img {
+        display: none;
+    }
+
+    .logo{
+        top: 10px;
+        left: 40px;
+        font-size: 1.5rem;
+    }
+
+    section{
+        padding: 100px 40px;
+    }
+
+    .navigation ul li a {
+        font-size: 2.0rem;
+    }    
 
     .contact-form .row {
         
