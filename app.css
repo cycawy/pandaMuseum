@@ -124,7 +124,7 @@ section#home {
 
 .home-img{
     /* background-color: red; */
-    background-image: url(imgs/panda/cover_2_final.jpeg);
+    background-image: url('imgs/panda/cover_2_final.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 45%;
