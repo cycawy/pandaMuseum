@@ -1,6 +1,6 @@
 :root{
     --primary-color: #0a0304;
-    --secondary-color: #1b20ce;
+    --secondary-color: #28282c;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 }
 
 /* HOMEPAGE */
-section{
+/* section{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -92,12 +92,45 @@ section#home {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 110%;
+    height: 100%;
+} */
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* min-height: 600px; */
+    align-items: center;
+    padding: 100px;
+    margin-top: 60px;
 }
 
+section#home {
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+}
 
+.home-content{
+    width: 55%;
+    padding: 50px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 
+}
 
+.home-img{
+    /* background-color: red; */
+    background-image: url(imgs/panda/cover_2_final.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100%;
+    
+}
 
 /* BUTTON */
 .btn{
@@ -325,8 +358,24 @@ section#home {
 }
 
 @media screen and (max-width: 768px){
+    
     .home-img {
         display: none;
+    }
+
+    section#home {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+    }
+    /* .home-img{
+        width: 90%;
+        padding: 5px;
+    } */
+    .home-content{
+        width: 80%;
+        margin-top: 50px;
+        padding: 10px;
     }
 
     .logo{
